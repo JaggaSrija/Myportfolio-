@@ -1,0 +1,2718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+content="Jagga Srija - B.Tech AI & ML fresher, Python Developer and AI enthusiast.">
+
+<meta name="keywords"
+content="Jagga Srija, AI ML, Python Developer, Machine Learning, Portfolio">
+
+<meta name="author" content="Jagga Srija">
+
+<title>Jagga Srija | AI & ML Developer</title>
+
+
+<style>
+
+/* =========================
+   GLOBAL
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Inter",sans-serif;
+    background:#03060d;
+    color:white;
+    line-height:1.6;
+    overflow-x:hidden;
+}
+
+
+/* Background Grid */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+
+    background-image:
+        linear-gradient(rgba(30,120,255,.06) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(30,120,255,.06) 1px,transparent 1px);
+
+    background-size:50px 50px;
+
+    pointer-events:none;
+    z-index:-2;
+}
+
+
+/* Blue Glow */
+
+body::after{
+    content:"";
+
+    position:fixed;
+
+    width:450px;
+    height:450px;
+
+    background:#008cff;
+
+    border-radius:50%;
+
+    filter:blur(160px);
+
+    opacity:.12;
+
+    top:-150px;
+    right:-150px;
+
+    pointer-events:none;
+
+    z-index:-1;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+nav{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:75px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 8%;
+
+    background:rgba(3,6,13,.78);
+
+    backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    z-index:1000;
+}
+
+
+.logo{
+
+    font-family:"Space Grotesk";
+
+    font-size:25px;
+
+    font-weight:800;
+
+    text-decoration:none;
+
+    color:white;
+}
+
+
+.logo span{
+    color:#42c8ff;
+}
+
+
+.nav-links{
+
+    display:flex;
+
+    gap:30px;
+}
+
+
+.nav-links a{
+
+    color:#9ca9bc;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    transition:.3s;
+}
+
+
+.nav-links a:hover,
+.nav-links a.active{
+
+    color:#62d9ff;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+section{
+
+    width:90%;
+
+    max-width:1150px;
+
+    margin:auto;
+
+    padding:55px 0;
+}
+
+
+.section-title{
+
+    margin-bottom:25px;
+}
+
+
+.small-title{
+
+    color:#5dd8ff;
+
+    font-size:13px;
+
+    letter-spacing:3px;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+}
+
+
+.section-title h2{
+
+    font-family:"Space Grotesk";
+
+    font-size:clamp(35px,5vw,55px);
+
+    line-height:1.1;
+}
+
+
+.section-title h2 span{
+
+    color:#5dd8ff;
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+#home{
+
+    min-height:100vh;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    align-items:center;
+
+    gap:60px;
+
+    padding-top:120px;
+
+    padding-bottom:55px;
+}
+
+
+.availability{
+
+    display:inline-block;
+
+    padding:7px 13px;
+
+    border:1px solid rgba(93,216,255,.25);
+
+    border-radius:50px;
+
+    color:#5dd8ff;
+
+    font-size:11px;
+
+    letter-spacing:1.5px;
+
+    background:rgba(93,216,255,.05);
+
+    margin-bottom:20px;
+}
+
+
+.hero h1{
+
+    font-family:"Space Grotesk";
+
+    font-size:clamp(50px,7vw,85px);
+
+    line-height:1;
+
+    letter-spacing:-4px;
+}
+
+
+.hero h1 span{
+
+    color:#5dd8ff;
+}
+
+
+.hero h2{
+
+    margin-top:20px;
+
+    font-family:"Space Grotesk";
+
+    font-size:clamp(22px,3vw,35px);
+}
+
+
+.typing{
+
+    color:#5dd8ff;
+}
+
+
+.hero-description{
+
+    color:#9ca9bc;
+
+    max-width:600px;
+
+    margin:25px 0;
+
+    font-size:16px;
+}
+
+
+/* Home Contact */
+
+.home-contact{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+    margin:18px 0 25px;
+
+    font-size:14px;
+
+    color:#9ca9bc;
+}
+
+
+.home-contact a{
+
+    color:#5dd8ff;
+
+    text-decoration:none;
+
+    transition:.3s;
+}
+
+
+.home-contact a:hover{
+
+    color:white;
+
+    text-decoration:underline;
+}
+
+
+.home-contact .divider{
+
+    color:#59687c;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+}
+
+
+.btn{
+
+    display:inline-block;
+
+    padding:13px 22px;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.3s;
+
+    border:none;
+
+    cursor:pointer;
+}
+
+
+.primary{
+
+    color:#00111c;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1595ff,
+            #67e7ff
+        );
+
+    box-shadow:
+        0 0 30px rgba(50,180,255,.25);
+}
+
+
+.secondary{
+
+    color:white;
+
+    border:
+        1px solid
+        rgba(255,255,255,.12);
+
+    background:
+        rgba(255,255,255,.04);
+}
+
+
+.btn:hover{
+
+    transform:translateY(-4px);
+}
+
+
+/* =========================
+   CODE CARD
+========================= */
+
+.hero-card{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+}
+
+
+.code-box{
+
+    width:100%;
+
+    max-width:500px;
+
+    padding:30px;
+
+    border-radius:22px;
+
+    background:
+        rgba(10,18,32,.75);
+
+    border:
+        1px solid
+        rgba(93,216,255,.18);
+
+    box-shadow:
+        0 0 80px
+        rgba(0,130,255,.15);
+
+    backdrop-filter:blur(15px);
+
+    transform:
+        perspective(900px)
+        rotateY(-6deg);
+}
+
+
+.dots{
+
+    display:flex;
+
+    gap:7px;
+
+    margin-bottom:25px;
+}
+
+
+.dots i{
+
+    width:9px;
+
+    height:9px;
+
+    border-radius:50%;
+
+    background:#59687c;
+}
+
+
+.code-box pre{
+
+    overflow-x:auto;
+}
+
+
+.code-box code{
+
+    font-family:monospace;
+
+    color:#dcecff;
+
+    line-height:2;
+
+    font-size:14px;
+}
+
+
+.pink{
+    color:#ff70b2;
+}
+
+
+.cyan{
+    color:#63ddff;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-grid{
+
+    display:grid;
+
+    grid-template-columns:1.3fr .7fr;
+
+    gap:25px;
+}
+
+
+.glass-card{
+
+    padding:32px;
+
+    border-radius:20px;
+
+    background:
+        rgba(10,18,32,.65);
+
+    border:
+        1px solid
+        rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+}
+
+
+.glass-card p{
+
+    color:#9ca9bc;
+
+    margin-bottom:18px;
+}
+
+
+.glass-card strong{
+
+    color:white;
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+.stats{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:12px;
+}
+
+
+.stat{
+
+    padding:25px;
+
+    border-radius:18px;
+
+    background:
+        rgba(255,255,255,.03);
+
+    border:
+        1px solid
+        rgba(255,255,255,.08);
+}
+
+
+.stat h3{
+
+    font-family:"Space Grotesk";
+
+    color:#5dd8ff;
+
+    font-size:22px;
+}
+
+
+.stat p{
+
+    color:#8794a8;
+
+    font-size:13px;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:18px;
+}
+
+
+.skill{
+
+    padding:25px;
+
+    border-radius:20px;
+
+    background:
+        rgba(10,18,32,.65);
+
+    border:
+        1px solid
+        rgba(255,255,255,.08);
+
+    transition:.3s;
+}
+
+
+.skill:hover{
+
+    transform:translateY(-7px);
+
+    border-color:
+        rgba(93,216,255,.3);
+
+    box-shadow:
+        0 15px 50px
+        rgba(0,0,0,.3);
+}
+
+
+.skill-icon{
+
+    width:50px;
+
+    height:50px;
+
+    display:grid;
+
+    place-items:center;
+
+    border-radius:13px;
+
+    color:#5dd8ff;
+
+    border:
+        1px solid
+        rgba(93,216,255,.2);
+
+    margin-bottom:20px;
+
+    font-size:12px;
+
+    font-weight:800;
+}
+
+
+.skill h3{
+
+    font-family:"Space Grotesk";
+
+    margin-bottom:8px;
+}
+
+
+.skill p{
+
+    color:#8e9aad;
+
+    font-size:13px;
+}
+
+
+.progress{
+
+    height:4px;
+
+    background:#182233;
+
+    margin-top:20px;
+
+    border-radius:20px;
+
+    overflow:hidden;
+}
+
+
+.progress span{
+
+    display:block;
+
+    height:100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            #168dff,
+            #64e5ff
+        );
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:20px;
+}
+
+
+.project{
+
+    padding:30px;
+
+    min-height:310px;
+
+    border-radius:22px;
+
+    background:
+        rgba(10,18,32,.7);
+
+    border:
+        1px solid
+        rgba(255,255,255,.08);
+
+    display:flex;
+
+    flex-direction:column;
+
+    transition:.3s;
+}
+
+
+.project:hover{
+
+    transform:translateY(-8px);
+
+    border-color:
+        rgba(93,216,255,.3);
+}
+
+
+.project-number{
+
+    color:#66748a;
+
+    font-size:12px;
+
+    margin-bottom:30px;
+}
+
+
+.project h3{
+
+    font-family:"Space Grotesk";
+
+    font-size:23px;
+
+    margin-bottom:12px;
+}
+
+
+.project p{
+
+    color:#919db0;
+
+    font-size:14px;
+}
+
+
+.technologies{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:7px;
+
+    margin-top:auto;
+
+    padding-top:25px;
+}
+
+
+.technologies span{
+
+    font-size:11px;
+
+    padding:5px 9px;
+
+    border-radius:50px;
+
+    color:#9edff5;
+
+    border:
+        1px solid
+        rgba(93,216,255,.15);
+
+    background:
+        rgba(93,216,255,.05);
+}
+
+
+/* =========================
+   EDUCATION
+========================= */
+
+.timeline{
+
+    border-left:
+        1px solid
+        rgba(93,216,255,.25);
+
+    padding-left:35px;
+
+    position:relative;
+
+    margin-bottom:25px;
+}
+
+
+.timeline-dot{
+
+    position:absolute;
+
+    left:-7px;
+
+    top:5px;
+
+    width:13px;
+
+    height:13px;
+
+    border-radius:50%;
+
+    background:#5dd8ff;
+
+    box-shadow:
+        0 0 20px #5dd8ff;
+}
+
+
+.year{
+
+    color:#5dd8ff;
+
+    font-size:13px;
+
+    font-weight:700;
+}
+
+
+.timeline h3{
+
+    font-family:"Space Grotesk";
+
+    font-size:23px;
+
+    margin:8px 0;
+}
+
+
+.timeline p{
+
+    color:#909caf;
+}
+
+
+/* =========================
+   GOALS
+========================= */
+
+.goal-box{
+
+    padding:40px;
+
+    border-radius:22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(20,100,160,.3),
+            rgba(10,18,32,.7)
+        );
+
+    border:
+        1px solid
+        rgba(93,216,255,.15);
+}
+
+
+.goal-box h2{
+
+    font-family:"Space Grotesk";
+
+    font-size:
+        clamp(35px,5vw,55px);
+
+    line-height:1.1;
+}
+
+
+.goal-box h2 span{
+
+    color:#5dd8ff;
+}
+
+
+.goal-box p{
+
+    color:#929eb1;
+
+    max-width:750px;
+
+    margin:20px 0 25px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        .8fr 1.2fr;
+
+    gap:35px;
+}
+
+
+.contact-info p{
+
+    color:#929eb1;
+
+    margin-bottom:25px;
+}
+
+
+.contact-item{
+
+    padding:15px 0;
+
+    border-bottom:
+        1px solid
+        rgba(255,255,255,.07);
+}
+
+
+.contact-item small{
+
+    display:block;
+
+    color:#68768b;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    margin-bottom:5px;
+}
+
+
+.contact-item a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+    font-size:15px;
+}
+
+
+.contact-item a:hover{
+
+    color:#5dd8ff;
+
+    text-decoration:underline;
+}
+
+
+/* Contact Form */
+
+form{
+
+    padding:25px;
+
+    border-radius:20px;
+
+    background:
+        rgba(10,18,32,.7);
+
+    border:
+        1px solid
+        rgba(255,255,255,.08);
+}
+
+
+input,
+textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:12px;
+
+    background:
+        rgba(0,0,0,.25);
+
+    color:white;
+
+    border:
+        1px solid
+        rgba(255,255,255,.08);
+
+    border-radius:12px;
+
+    outline:none;
+
+    font-family:inherit;
+}
+
+
+input:focus,
+textarea:focus{
+
+    border-color:#5dd8ff;
+}
+
+
+#message{
+
+    margin-top:15px;
+
+    color:#5dd8ff;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+    text-align:center;
+
+    padding:30px 20px;
+
+    border-top:
+        1px solid
+        rgba(255,255,255,.06);
+
+    color:#68758a;
+
+    font-size:13px;
+}
+
+
+/* =========================
+   ANIMATION
+========================= */
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+}
+
+
+.reveal.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:850px){
+
+    #home{
+
+        grid-template-columns:1fr;
+
+        padding-top:120px;
+    }
+
+
+    .about-grid,
+    .contact-grid{
+
+        grid-template-columns:1fr;
+    }
+
+
+    .skills{
+
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+
+    .hero-card{
+
+        margin-top:20px;
+    }
+}
+
+
+@media(max-width:600px){
+
+    nav{
+
+        padding:0 5%;
+    }
+
+
+    .nav-links{
+
+        display:none;
+    }
+
+
+    section{
+
+        padding:45px 0;
+    }
+
+
+    .hero h1{
+
+        font-size:48px;
+    }
+
+
+    .skills,
+    .projects,
+    .stats{
+
+        grid-template-columns:1fr;
+    }
+
+
+    .goal-box{
+
+        padding:30px;
+    }
+
+
+    .code-box{
+
+        transform:none;
+    }
+
+
+    .home-contact{
+
+        align-items:flex-start;
+
+        flex-direction:column;
+
+        gap:5px;
+    }
+
+
+    .home-contact .divider{
+
+        display:none;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<nav>
+
+    <a href="#home" class="logo">
+        J.SRIJA<span>.</span>
+    </a>
+
+
+    <div class="nav-links">
+
+        <a href="#home" class="active">
+            Home
+        </a>
+
+        <a href="#about">
+            About
+        </a>
+
+        <a href="#skills">
+            Skills
+        </a>
+
+        <a href="#projects">
+            Projects
+        </a>
+
+        <a href="#education">
+            Education
+        </a>
+        <a href="#certifications">
+            Certifications
+        </a>
+
+        <a href="#contact">
+            Contact
+        </a>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =========================
+     HOME
+========================= -->
+
+<section id="home">
+
+    <div class="hero">
+
+        <div>
+
+            <div class="availability">
+                AVAILABLE FOR OPPORTUNITIES
+            </div>
+
+
+            <p class="small-title">
+                B.TECH • ARTIFICIAL INTELLIGENCE & MACHINE LEARNING
+            </p>
+
+
+            <h1>
+
+                <span>
+                    Jagga Srija
+                </span>
+
+            </h1>
+
+
+            <h2>
+
+                Building Future
+
+                <span class="typing"></span>
+
+            </h2>
+
+
+            <p class="hero-description">
+
+                A passionate AI & ML fresher who enjoys turning
+                ideas into practical digital solutions using Python,
+                machine learning and modern development technologies.
+
+            </p>
+
+
+            <!-- HOME CONTACT -->
+
+            <div class="home-contact">
+
+                <a href="mailto:jaggasrija4545@gmail.com">
+
+                    📧 jaggasrija4545@gmail.com
+
+                </a>
+
+
+                <span class="divider">
+                    |
+                </span>
+
+
+                <span>
+                    📍 Hyderabad
+                </span>
+
+            </div>
+
+
+            <!-- BUTTONS -->
+
+            <div class="buttons">
+
+                <a
+                    href="#projects"
+                    class="btn primary"
+                >
+                    View Projects
+                </a>
+
+
+                <a
+                    href="#contact"
+                    class="btn secondary"
+                >
+                    Contact Me
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CODE CARD -->
+
+        
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about">
+
+    <div class="section-title">
+
+        <p class="small-title">
+            01 / ABOUT
+        </p>
+
+        <h2>
+            <span>
+                About.
+            </span>
+        </h2>
+
+    </div>
+
+
+    <div class="about-grid">
+
+        <div class="glass-card">
+
+            <p>
+                I’m <strong>Jagga Srija</strong>, a B.Tech student
+                specializing in <strong>Artificial Intelligence &
+                Machine Learning</strong>.
+            </p>
+
+            <p>
+                I have hands-on experience with Python, Machine Learning,
+                Computer Vision and Web Development through academic and
+                personal projects.
+            </p>
+
+            <p>
+                As a fresher, I’m eager to learn, solve real-world problems
+                and contribute to innovative projects while growing as an
+                <strong>AI & ML professional</strong>.
+            </p>
+
+        </div>
+
+
+        <div class="stats">
+
+            <div class="stat">
+                <h3>Fresher</h3>
+                <p>Career Level</p>
+            </div>
+
+            <div class="stat">
+                <h3>AI & ML</h3>
+                <p>Specialization</p>
+            </div>
+
+            <div class="stat">
+                <h3>8.66</h3>
+                <p>Current CGPA</p>
+            </div>
+
+            <div class="stat">
+                <h3>2027</h3>
+                <p>Graduation</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     SKILLS
+========================= -->
+
+<section id="skills">
+
+
+    <div class="section-title">
+
+        <p class="small-title">
+            02 / SKILLS
+        </p>
+
+
+        <h2>
+
+            My
+
+            <span>
+                toolkit.
+            </span>
+
+        </h2>
+
+    </div>
+
+
+
+    <div class="skills">
+
+
+        <div class="skill">
+
+            <div class="skill-icon">
+                PY
+            </div>
+
+            <h3>
+                Programming
+            </h3>
+
+            <p>
+                Python • Java • HTML • CSS .C(Basics) 
+            </p>
+
+            <div class="progress">
+                <span style="width:90%"></span>
+            </div>
+
+        </div>
+
+
+
+        <div class="skill">
+
+            <div class="skill-icon">
+                AI
+            </div>
+
+            <h3>
+                AI & Machine Learning
+            </h3>
+
+            <p>
+                Machine Learning • OpenCV • scikit-learn 
+            </p>
+
+            <div class="progress">
+                <span style="width:88%"></span>
+            </div>
+
+        </div>
+
+
+
+        <div class="skill">
+
+            <div class="skill-icon">
+                WEB
+            </div>
+
+            <h3>
+                Web Development
+            </h3>
+
+            <p>
+                Flask • Django • React • REST APIs
+            </p>
+
+            <div class="progress">
+                <span style="width:78%"></span>
+            </div>
+
+        </div>
+
+
+
+        <div class="skill">
+
+            <div class="skill-icon">
+                DB
+            </div>
+
+            <h3>
+                Databases & Tools
+            </h3>
+
+            <p>
+                MySQL • Git • GitHub • VS Code
+            </p>
+
+            <div class="progress">
+                <span style="width:82%"></span>
+            </div>
+
+        </div>
+
+
+
+        <div class="skill">
+
+            <div class="skill-icon">
+                DSA
+            </div>
+
+            <h3>
+                Problem Solving
+            </h3>
+
+            <p>
+                OOP • DSA • Logical Thinking
+            </p>
+
+            <div class="progress">
+                <span style="width:80%"></span>
+            </div>
+
+        </div>
+
+
+
+        <div class="skill">
+
+            <div class="skill-icon">
+                TEAM
+            </div>
+
+            <h3>
+                Professional Skills
+            </h3>
+
+            <p>
+                Communication • Presentation •
+                Teamwork • Event Organizing . Creativity
+            </p>
+
+            <div class="progress">
+                <span style="width:86%"></span>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     PROJECTS
+========================= -->
+
+<section id="projects">
+
+
+    <div class="section-title">
+
+        <p class="small-title">
+            03 / PROJECTS
+        </p>
+
+
+        <h2>
+
+            Things I've
+
+            <span>
+                built.
+            </span>
+
+        </h2>
+
+    </div>
+
+
+
+    <div class="projects">
+
+
+        <div class="project">
+
+            <div class="project-number">
+                PROJECT 01 • AI / ML
+            </div>
+
+
+            <h3>
+                <p>
+                    Major Project
+                </p>
+                AI-Powered Financial Fraud Detection
+                & Risk Assessment
+            </h3>
+
+
+            <p>
+
+                An intelligent system designed to identify
+                suspicious financial transactions, assess risk
+                and support explainable decision-making.
+
+            </p>
+
+
+            <div class="technologies">
+
+                <span>Python</span>
+                <span>Machine Learning</span>
+                <span>LightGBM</span>
+                <span>SHAP</span>
+                <span>Dashboard</span>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="project">
+
+            <div class="project-number">
+                PROJECT 02 • AI + WEB
+            </div>
+
+
+            <h3>
+                WhatsApp AI Website Generator
+            </h3>
+
+
+            <p>
+
+                A conversational website-generation project
+                using Groq AI and Twilio WhatsApp Sandbox.
+
+            </p>
+
+
+            <div class="technologies">
+
+                <span>Python</span>
+                <span>Groq AI</span>
+                <span>Twilio</span>
+                <span>Flask</span>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="project">
+
+            <div class="project-number">
+                PROJECT 03 • COMPUTER VISION
+            </div>
+
+
+            <h3>
+                <p>
+                    Mini Project
+                </p>
+                 Estimate height, weight and Body Mass Index (BMI) Prediction from Face Image
+            </h3>
+
+
+            <p>
+
+                A computer vision and machine learning project
+                designed to estimate height, weight and BMI
+                category from facial image information.
+
+            </p>
+
+
+            <div class="technologies">
+
+                <span>Python</span>
+                <span>OpenCV</span>
+                <span>scikit-learn</span>
+                <span>CNN</span>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="project">
+
+            <div class="project-number">
+                PROJECT 04 • FUTURE
+            </div>
+
+
+            <h3>
+                More Projects Coming Soon
+            </h3>
+
+
+            <p>
+
+                Future projects in AI, machine learning,
+                full-stack development and automation
+                will be added here.
+
+            </p>
+
+
+            <div class="technologies">
+
+                <span>AI</span>
+                <span>Web Development</span>
+                <span>Automation</span>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     EDUCATION
+========================= -->
+
+<section id="education">
+
+
+    <div class="section-title">
+
+        <p class="small-title">
+            04 / EDUCATION
+        </p>
+
+
+        <h2>
+
+            My
+
+            <span>
+                journey.
+            </span>
+
+        </h2>
+
+    </div>
+
+
+
+    <div class="timeline">
+
+        <div class="timeline-dot"></div>
+
+
+        <span class="year">
+            2023-2027
+        </span>
+
+
+        <h3>
+            B.Tech — Artificial Intelligence &
+            Machine Learning
+        </h3>
+
+
+        <p>
+            Nalla Narasimha Reddy Group of Institutions
+        </p>
+
+
+        <p>
+            CGPA: 8.66
+        </p>
+
+
+        <p>
+
+            Focused on Artificial Intelligence,
+            Machine Learning, programming,
+            software development and practical projects.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="timeline">
+
+        <div class="timeline-dot"></div>
+
+
+        <span class="year">
+            2021-2023
+        </span>
+
+
+        <h3>
+            Board Of Intermediate
+        </h3>
+
+
+        <p>
+            Pavithra Junior College
+        </p>
+
+
+        <p>
+            Percentage: 98%
+        </p>
+
+    </div>
+
+
+
+    <div class="timeline">
+
+        <div class="timeline-dot"></div>
+
+
+        <span class="year">
+            2021
+        </span>
+
+
+        <h3>
+            Board Of Secondary Education (SSC)
+        </h3>
+
+
+        <p>
+            ZPHS
+        </p>
+
+
+        <p>
+            Percentage: 10/10
+        </p>
+
+    </div>
+
+</section>
+<!-- =========================
+     CERTIFICATIONS
+=========================== --->
+<style>
+
+/* =========================
+   CERTIFICATIONS
+========================= */
+
+.certifications {
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.certification {
+    padding:30px;
+    min-height:310px;
+    border-radius:22px;
+
+    background:rgba(10,18,32,.7);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    display:flex;
+    flex-direction:column;
+
+    transition:.3s;
+}
+
+.certification:hover {
+    transform:translateY(-8px);
+
+    border-color:
+        rgba(93,216,255,.3);
+}
+
+.certification-number {
+    color:#66748a;
+
+    font-size:12px;
+
+    margin-bottom:30px;
+}
+
+.certification h3 {
+    font-family:"Space Grotesk";
+
+    font-size:23px;
+
+    line-height:1.3;
+
+    margin-bottom:10px;
+}
+
+.certification-issuer {
+    color:#5dd8ff;
+
+    font-size:13px;
+
+    margin-bottom:14px;
+}
+
+.certification-description {
+    color:#919db0;
+
+    font-size:14px;
+
+    line-height:1.6;
+}
+
+.certification-tags {
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:7px;
+
+    margin-top:auto;
+
+    padding-top:25px;
+}
+
+.certification-tags span {
+    font-size:11px;
+
+    padding:5px 9px;
+
+    border-radius:50px;
+
+    color:#9edff5;
+
+    border:1px solid
+        rgba(93,216,255,.15);
+
+    background:
+        rgba(93,216,255,.05);
+}
+
+.certification-link {
+    display:inline-block;
+
+    margin-top:18px;
+
+    width:fit-content;
+
+    color:#5dd8ff;
+
+    text-decoration:none;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    transition:.3s;
+}
+
+.certification-link:hover {
+    color:white;
+
+    transform:translateX(4px);
+}
+
+
+/* Mobile */
+
+@media(max-width:700px) {
+
+    .certifications {
+        grid-template-columns:1fr;
+    }
+
+}
+
+</style>
+<!-- =========================
+     CERTIFICATIONS
+========================= -->
+
+<section id="certifications">
+
+    <div class="section-title">
+
+        <p class="small-title">
+            05 / CERTIFICATIONS
+        </p>
+
+        <h2>
+            Professional
+            <span>certifications.</span>
+        </h2>
+
+    </div>
+
+
+    <div class="certifications">
+
+
+        <!-- =========================
+             CERTIFICATE 01
+        ========================= -->
+
+        <div class="certification">
+
+            <div class="certification-number">
+                CERTIFICATION 01
+            </div>
+
+            <h3>
+                Python Essentials 1
+            </h3>
+
+            <p class="certification-issuer">
+                Cisco Networking Academy
+            </p>
+
+            <p class="certification-description">
+                Python programming fundamentals, syntax,
+                functions, data structures and problem solving.
+            </p>
+
+            <div class="certification-tags">
+
+                <span>Python</span>
+
+                <span>Programming</span>
+
+            </div>
+
+            <a
+                href="https://www.credly.com/badges/f9c31f99-bdd7-4a9a-ad77-5f78b782e105"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="certification-link"
+            >
+                Verify Certificate ↗
+            </a>
+
+        </div>
+
+
+        <!-- =========================
+             CERTIFICATE 02
+        ========================= -->
+
+        <div class="certification">
+
+            <div class="certification-number">
+                CERTIFICATION 02
+            </div>
+
+            <h3>
+                ChatGPT for Data Science
+                & Machine Learning
+            </h3>
+
+            <p class="certification-issuer">
+                Udemy · 365 Careers
+            </p>
+
+            <p class="certification-description">
+                Practical applications of ChatGPT for
+                data science, machine learning and AI workflows.
+            </p>
+
+            <div class="certification-tags">
+
+                <span>Data Science</span>
+
+                <span>Machine Learning</span>
+
+            </div>
+
+            <a
+                href="https://www.udemy.com/certificate/UC-800f769e-b1d3-41d8-a12f-e863e754be1c/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="certification-link"
+            >
+                Verify Certificate ↗
+            </a>
+
+        </div>
+
+
+        <!-- =========================
+             CERTIFICATE 03
+        ========================= -->
+
+        <div class="certification">
+
+            <div class="certification-number">
+                CERTIFICATION 03
+            </div>
+
+            <h3>
+                Artificial Intelligence
+                Fundamentals
+            </h3>
+
+            <p class="certification-issuer">
+                IBM SkillsBuild
+            </p>
+
+            <p class="certification-description">
+                Fundamental concepts of artificial intelligence,
+                its applications and emerging AI technologies.
+            </p>
+
+            <div class="certification-tags">
+
+                <span>Artificial Intelligence</span>
+
+                <span>IBM</span>
+
+            </div>
+
+            <a
+                href="https://www.credly.com/badges/55a440c6-e767-4b3b-9258-846ac020a307"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="certification-link"
+            >
+                Verify Certificate ↗
+            </a>
+
+        </div>
+
+
+        <!-- =========================
+             CERTIFICATE 04
+        ========================= -->
+
+        <div class="certification">
+
+            <div class="certification-number">
+                CERTIFICATION 04
+            </div>
+
+            <h3>
+                Data Analysis with Python
+            </h3>
+
+            <p class="certification-issuer">
+                Infosys Springboard
+            </p>
+
+            <p class="certification-description">
+                Data analysis using Python with practical
+                techniques for working with and interpreting data.
+            </p>
+
+            <div class="certification-tags">
+
+                <span>Python</span>
+
+                <span>Data Analysis</span>
+
+            </div>
+
+            <a
+                href="https://verify.onwingspan.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="certification-link"
+            >
+                Verify Certificate ↗
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- =========================
+     CONTACT
+========================= -->
+<section id="contact">
+
+
+    <div class="section-title">
+
+        <p class="small-title">
+            06 / CONTACT
+        </p>
+
+            <!-- EMAIL -->
+
+            <div class="contact-item">
+
+                <small>
+                    Email
+                </small>
+
+
+                <a
+                    href="mailto:jaggasrija4545@gmail.com"
+                >
+
+                    📧 jaggasrija4545@gmail.com
+
+                </a>
+
+            </div>
+        <!-- LINKEDIN -->
+
+            <div class="contact-item">
+
+                <small>
+                    LinkedIn
+                </small>
+
+
+                <a
+                    href="https://linkedin.com/in/srija-jagga45"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    🔗 LinkedIn
+
+                </a>
+
+            </div>
+            <!-- GITHUB -->
+
+            <div class="contact-item">
+
+                <small>
+                   GitHub
+                </small>
+
+                <a
+                    href="https://github.com/JaggaSrija"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+
+                    💻 GitHub
+
+                 </a>
+
+            </div>
+
+
+        </div>
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <h3>Jagga Srija</h3>
+
+        <p class="footer-role">
+            AI & ML Developer | Python Enthusiast | Aspiring Software Engineer
+        </p>
+
+        <div class="footer-links">
+
+            <a
+                href="mailto:jaggasrija4545@gmail.com"
+            >
+                Email
+            </a>
+
+            <span>•</span>
+
+            <a
+                href="https://linkedin.com/in/srija-jagga45"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                LinkedIn
+            </a>
+
+            <span>•</span>
+
+            <a
+                href="https://github.com/JaggaSrija"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                GitHub
+            </a>
+
+        </div>
+
+        <div class="footer-line"></div>
+
+        <p class="copyright">
+            © 2027 Jagga Srija.
+        </p>
+
+        <p class="footer-tagline">
+            Built with passion, creativity & code.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script>
+
+/* =========================
+   TYPING EFFECT
+========================= */
+
+const typingElement =
+    document.querySelector(".typing");
+
+
+const words = [
+
+    "with Code.",
+
+    "with AI.",
+
+    "with Machine Learning.",
+
+    "with Creativity."
+
+];
+
+
+let wordIndex = 0;
+
+let charIndex = 0;
+
+let deleting = false;
+
+
+function typeEffect(){
+
+    const currentWord =
+        words[wordIndex];
+
+
+    if(!deleting){
+
+        typingElement.textContent =
+            currentWord.substring(
+                0,
+                charIndex + 1
+            );
+
+
+        charIndex++;
+
+
+        if(
+            charIndex ===
+            currentWord.length
+        ){
+
+            deleting = true;
+
+
+            setTimeout(
+                typeEffect,
+                1200
+            );
+
+
+            return;
+
+        }
+
+    }
+
+
+    else{
+
+        typingElement.textContent =
+            currentWord.substring(
+                0,
+                charIndex - 1
+            );
+
+
+        charIndex--;
+
+
+        if(charIndex === 0){
+
+            deleting = false;
+
+
+            wordIndex =
+                (wordIndex + 1)
+                % words.length;
+
+        }
+
+    }
+
+
+    setTimeout(
+
+        typeEffect,
+
+        deleting ? 50 : 90
+
+    );
+
+}
+
+
+typeEffect();
+
+
+
+/* =========================
+   SCROLL ANIMATION
+========================= */
+
+const observer =
+
+    new IntersectionObserver(
+
+        function(entries){
+
+            entries.forEach(
+
+                function(entry){
+
+                    if(
+                        entry.isIntersecting
+                    ){
+
+                        entry.target
+                            .classList
+                            .add("show");
+
+                    }
+
+                }
+
+            );
+
+        },
+
+        {
+            threshold:.15
+        }
+
+    );
+
+
+
+document
+
+    .querySelectorAll(
+
+        ".skill, .project, .glass-card, .stat, .goal-box, .timeline, .contact-info, form"
+
+    )
+
+    .forEach(
+
+        element =>
+
+            element.classList
+                .add("reveal")
+
+    );
+
+
+
+document
+
+    .querySelectorAll(".reveal")
+
+    .forEach(
+
+        element =>
+
+            observer.observe(element)
+
+    );
+
+
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+function sendMessage(event){
+
+    event.preventDefault();
+
+
+    document
+        .getElementById("message")
+        .textContent =
+
+        "Thank you! Your message has been received.";
+
+
+    event.target.reset();
+
+}
+
+
+
+/* =========================
+   ACTIVE NAVIGATION
+========================= */
+
+const sections =
+    document.querySelectorAll("section");
+
+
+const navLinks =
+    document.querySelectorAll(
+        ".nav-links a"
+    );
+
+
+window.addEventListener(
+
+    "scroll",
+
+    function(){
+
+        let current = "";
+
+
+        sections.forEach(
+
+            section => {
+
+                const sectionTop =
+                    section.offsetTop;
+
+
+                if(
+
+                    window.scrollY >=
+                    sectionTop - 180
+
+                ){
+
+                    current =
+                        section.getAttribute(
+                            "id"
+                        );
+
+                }
+
+            }
+
+        );
+
+
+        navLinks.forEach(
+
+            link => {
+
+                link.classList.remove(
+                    "active"
+                );
+
+
+                if(
+
+                    link.getAttribute("href")
+                    === "#" + current
+
+                ){
+
+                    link.classList.add(
+                        "active"
+                    );
+
+                }
+
+            }
+
+        );
+
+    }
+
+);
+
+</script>
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
